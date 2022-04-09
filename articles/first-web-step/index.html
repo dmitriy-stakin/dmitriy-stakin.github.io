@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Основы вёрстки сайтов</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Основы вёрстки сайтов</h1>
+        <p>Гориченко Дмитрий, dmagroup</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Основы вёрстки сайтов v0.8</h2>
+        <p>Гориченко Дмитрий</p>
+        <figure>
+            <img class="cover" src="pictures/cover.jpg" alt="html5 + css3">
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="picture">
+        <figure>
+            <img class="cover" src="pictures/picture.jpg" alt="dmagroup logo">
+        </figure>
+        <style>
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Стркутура повествования</h2>
+        <ol>
+            <li>Что такое HTML?</li>
+            <li>Зачем нужен css и с чем его есть?</li>
+            <li>Полезные ссылки</li>
+            <li>Вопросы</li>
+            <li>Немного практики</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Что такое HTML?<br><i>(Hypertext markup language)</i></h2>
+        <ol>
+            <li>Язык гипертекстовой <b>РАЗМЕТКИ</b></li>
+            <li>Инструмент, объясняющий браузеру, ЧТО мы хотим</li>
+            <li>Сама суть сайта</li>
+        </ol>
+        <p>Структура языка разметки HTML состоит из тегов</p>
+    </section>
+
+    <section class="slide">
+        <h2>Что такое тег?</h2>
+        <p>Условное обозначение элемента на странице. Представляет собой название тега, заключённое в угловые скобки</p>
+        <pre>
+            <code>
+                &lt; *название тега* &gt;
+            </code> 
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Основные виды тегов</h2>
+        <ol>
+            <li>С закрывающим тегом
+                <p>a, p, div, section, form, header, footer, h1...h6</p>
+            </li>
+            <li>Без закрывающего тега
+                <p>img, input, link, meta</p>
+            </li>
+        </ol>
+        <p>Устаревший вариант <code> &lt; img /&gt; </code> </p>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Что сейчас было?</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Стандартная структура</h2>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code class="mark">&lt;html lang="en"&gt;</code>
+            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
+            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+            <code><mark>&lt;/head&gt;</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Стандартная структура</h2>
+        <pre>
+            <code><mark>&lt;/head&gt;</mark></code>
+            <code><mark>&lt;body&gt;</mark></code>
+            <code>&lt;section&gt;</code>
+            <code>  &lt;div&gt;</code>
+            <code>      &lt;p&gt;Quick brown fox jumps over the lazy dog&lt;/p&gt;</code>
+            <code>  &lt;/div&gt;</code>  
+        &lt;/section&gt;       
+            </code>
+            <code><mark>&lt;/body&gt;</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Аттрибуты тегов</h2>
+        <p>Дополнительное значение для вашего тега</p>
+        <pre>
+            <code>&lt; input type="text" value = "I am a value" &gt;
+            </code> 
+        </pre>
+        <input type="text" value="I am a value">
+    </section>
+
+    <section class="slide">
+        <h2>Аттрибут id</h2>
+        <p>Индивидуальный идентификатор тега. Не должен повторяться.</p>
+        <pre>
+            <code>&lt; input type="text" id = "I am an id" &gt;
+            </code> 
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Что такое CSS?<br><i>(Cascading style sheets)</i></h2>
+        <ol>
+            <li>Язык <b>СТИЛЕЙ</b></li>
+            <li>Инструмент, объясняющий КАК мы хотим</li>
+            <li>Улучшение внешнего вида сайта</li>
+        </ol>
+        <p>Основу CSS составляют селекторы</p>
+    </section>
+
+    <section class="slide">
+        <h2>Что такое селектор?</h2>
+        <pre>
+            <code>&lt; div class="your-class" &gt;</code>
+            <code class="mark">.your-class { ... }</code> 
+            <code>&lt; div id="your-id" &gt;</code>
+            <code class="mark">#your-class { ... }</code> 
+            <code>&lt; section &gt;</code>
+            <code class="mark">section { ... }</code> 
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Требования к наименованию селекторов</h2>
+            <ul>
+                <li>Не начинается с цифры</li>
+                <li>На английском</li>
+                <li>Должен передавать логику тега, который выбирает</li>
+                <li>Не желательно писать длиннее трёх слов</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Правила в CSS</h2>
+        <p>Правило = свойство, которое мы хотим добавить к элементу (тегу), или изменить существующее</p>
+        <pre>
+            <code>&lt; div class="your-class" &gt;</code>
+            <code>.your-class { 
+    <mark>margin-top:</mark> 20px; 
+    <mark>color:</mark> red; }</code> 
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Полезные ссылки</h2>
+        <ol>
+            <li><a href="//yandex.ru">Yandex.ru</a> и ДРУГИЕ поисковые системы</li>
+            <li><a href="//developer.mozilla.org/ru/docs/Web">MDN (Mozilla Developer Network) общее руководство для начинающих</a></li>
+            <li><a href="//youtube.com/channel/UCY35dlJe-V5J_IqzU-XksAg">Хорошая серия подкастов о веб-разработке + конференции на различные темы</a></li>
+
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Вопросы?</h2>
+        <div class="copyright right">
+            Special thanks: <a href="https://dmagroup.ru">dmagroup</a> & <a href="https://pepelsbey.net">Vadim Makeev</a></a>
+        </div>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Сделано в Shower</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
