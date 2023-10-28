@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    /* critical css */
+    <!-- critical css -->
     <style>
         .wrapper {
         background-color: #f5f5f5;
@@ -21,6 +21,200 @@
     
 </head>
 <body>
+
+<header class="custom-header">
+    <div class="container-wide">
+
+        <div class="header-content flex">
+            <figure class="logo flex">
+                <a href="/" title="На главную">
+                    <img class="logo__img" src="assets/img/logo.webp" alt="Логотип компании">
+                </a>
+            </figure>
+            <div class="burger-wrapper flex">
+
+                <label for="menu-trigger" class="burger flex" tabindex="0">
+                    <div class="burger__line"></div>
+                </label>
+
+                <input class="hidden" type="checkbox" name="menu-trigger" id="menu-trigger">
+
+                <div class="side-menu flex">
+
+                    <label for="menu-trigger" class="menu-close">X</label>
+
+                    <figure class="side-menu__logo-wrapper flex">
+                        <a class="side-menu__logo-link" href="/" title="На главную"><img class="side-menu__logo" src="assets/img/logo.webp" alt="Логотип компании"></a>
+                        <figcaption class="side-menu__logo-caption flex">ООО "Производственно-такелажная компания"</figcaption>
+                    </figure>
+
+                    <nav class="header-menu__mobile">
+
+                        <ul id="menu-one-page-menu-1" class="mobile-menu__list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1416">
+                                <a href="https://takelag.info/o-kompanii" class="">О компании</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="">Услуги</a>
+                            
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-has-children">
+                                        <a>Такелажные работы</a>
+                                        
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="https://takelag.info/takelag-oborudovania">Такелаж оборудования в Москве</a></li>
+                                            <li class="menu-item"><a href="/pogruzka-i-razgruzka-oborudovaniya">Разгрузка/погрузка оборудования</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelag-stankov">Такелаж станков в Москве</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelazh-serverov">Перевозка серверного оборудования в Москве и области</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelazh-sejfov">Такелаж сейфов в Москве и области</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelag-pressov">Такелаж прессов в Москве</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelazh-bankomatov">Такелаж банкоматов в Москве</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/talekag-med-oborudovania">Такелаж мед. оборудования</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelag-gabaritnix-gruzov">Такелаж крупногабаритного оборудования в Москве и области</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelag-pechatnogo-oborudovania">Такелаж полиграфического оборудования</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelag-proizvodstvennyh-linii">Такелаж производственных линий</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/takelag-transformatorov">Такелаж трансформаторов в Москве</a></li>
+                                            <li class="menu-item"><a href="https://takelag.info/perenos-domov">Перенос домов в Москве и области</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="https://takelag.info/montag-oborudovania">Монтаж оборудования</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/demontag-oborudovania">Демонтаж оборудования</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/pereezdy">Услуга переезда в Москве и области</a>
+                                    
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="/promyshlennyj-pereezd">Промышленный переезд</a></li>
+                                        <li class="menu-item"><a href="/ofisnyj-pereezd">Офисный переезд</a></li>
+                                    </ul>
+                                </li>
+                                    <li class="menu-item menu-item-has-children menu-item-2324">
+                                        <a href="#">Грузоперевозки</a>
+                                        
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="/gruzoperevozki-s-gruzchikami">Грузоперевозки с грузчиками</a></li>
+                                        </ul>
+                                </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://takelag.info/video" class="">Наши работы</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://takelag.info/ceny">Цены</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://takelag.info/kontakty">Контакты</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <footer class="menu-mobile__footer flex">
+
+                        <div class="mob-footer__social-wrap">
+                            <a href="mailto:psgtakelag@yandex.ru" class="mob-footer__social mail">
+                                <img class="mob-footer__social-image" src="assets/icons/mail.svg" alt="Контакт по почте">
+                            </a>
+                        </div>
+                        <div class="mob-footer__social-wrap">
+                            <a href="tel:84952276242" class="mob-footer__social phone">
+                                <img class="mob-footer__social-image" src="assets/icons/mobile.svg" alt="Контакт по телефону">
+                            </a>
+                        </div>
+                        <div class="mob-footer__social-wrap">
+                            <a href="//youtube.com/user/evgeniy4248" class="mob-footer__social youtube">
+                                <img class="mob-footer__social-image" src="assets/icons/youtube.svg" alt="Перейти на ютуб канал">
+                            </a>
+                        </div> 
+
+                    </footer>
+
+                </div>
+
+            </div>
+
+            <nav class="header-menu__container hidden">
+                <ul id="menu-one-page-menu-2" class="header-menu flex">
+
+                    <li class="menu-item">
+                        <a href="https://takelag.info/o-kompanii">О компании</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children" tabindex="0">
+                        <a>Услуги</a>
+                        
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children" tabindex="0"><a>Такелажные работы</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="https://takelag.info/takelag-oborudovania">Такелаж оборудования в Москве</a></li>
+                                    <li class="menu-item"><a href="/pogruzka-i-razgruzka-oborudovaniya">Разгрузка/погрузка оборудования</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelag-stankov">Такелаж станков в Москве</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelazh-serverov">Перевозка серверного оборудования в Москве и области</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelazh-sejfov">Такелаж сейфов в Москве и области</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelag-pressov">Такелаж прессов в Москве</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelazh-bankomatov">Такелаж банкоматов в Москве</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/talekag-med-oborudovania">Такелаж мед. оборудования</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelag-gabaritnix-gruzov">Такелаж крупногабаритного оборудования в Москве и области</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelag-pechatnogo-oborudovania">Такелаж полиграфического оборудования</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelag-proizvodstvennyh-linii">Такелаж производственных линий</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/takelag-transformatorov">Такелаж трансформаторов в Москве</a></li>
+                                    <li class="menu-item"><a href="https://takelag.info/perenos-domov">Перенос домов в Москве и области</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="https://takelag.info/montag-oborudovania">Монтаж оборудования</a></li>
+                            <li class="menu-item"><a href="https://takelag.info/demontag-oborudovania">Демонтаж оборудования</a></li>
+                            <li class="menu-item menu-item-has-children" tabindex="0">
+                                <a href="https://takelag.info/pereezdy">Услуга переезда в Москве и области</a>
+                                
+                                <ul class="sub-menu">
+                                    <li class="menu-item 2322"><a href="/promyshlennyj-pereezd">Промышленный переезд</a></li>
+                                    <li class="menu-item 2323"><a href="/ofisnyj-pereezd">Офисный переезд</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children" tabindex="0"><a href="#">Грузоперевозки</a>
+                            
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="/gruzoperevozki-s-gruzchikami">Грузоперевозки с грузчиками</a>
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://takelag.info/video">Наши работы</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://takelag.info/ceny">Цены</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://takelag.info/kontakty">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-contacts hidden flex">
+                <div>
+                    <a href="tel:84952276242" class="header-contacts__phone">+7 (495) 227-62-42</a>
+                </div>
+                <div>
+                    <a href="mailto:psgtakelag@yandex.ru" class="header-contacts__mail">psgtakelag@yandex.ru</a>
+                </div>
+            </div>
+            <div class="pp-btn flex">
+                <button class="button open-popup calculation-popup__btn hidden">
+                    Заказать звонок
+                </button>
+                <img src="assets/icons/mobile.svg" class="pp-btn--mobile open-popup recall-popup__btn">
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+<!-- <script>
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+</script> -->
 
 <section class="hero__main">
     <div class="container-wide">
@@ -138,7 +332,7 @@
                 </li>
 
                 <li class="services-list__item">
-                    <button class="services-list__link flex open-popup calculation-popup__btn">
+                    <button class="button services-list__link flex open-popup calculation-popup__btn">
                         <p class="services-list__text">Заказать работы</p>
                     </button>
                 </li>
@@ -153,7 +347,24 @@
     <div class="container-wide flex">
 
         <div class="contact-form width-50">
-            <?php echo do_shortcode('[contact-form-7 id="3194" title="Page form wide (new)"]') ?>
+            <form action="/test-main#wpcf7-f3194-o3" method="post" class="wpcf7-form init" novalidate="novalidate">
+                <p>
+                    <span class="wpcf7-form-control-wrap text-77">
+                        <input type="text" name="text-77" value="" size="40" class="wpcf7-form-control wpcf7-text popup__input popup__name" aria-invalid="false" placeholder="Ваше имя">
+                    </span><br>
+                <span class="wpcf7-form-control-wrap mask-29">
+                    <input type="tel" name="mask-29" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask wpcf7-validates-as-required popup__input popup__phone" size="40" aria-required="1" placeholder="+7 (___) ___-__-__ *" data-mask="+7 (___) ___-__-__ *">
+                </span><br>
+                <span class="wpcf7-form-control-wrap text-837">
+                    <input type="text" name="text-837" value="" size="40" class="wpcf7-form-control wpcf7-text popup__input" aria-invalid="false" placeholder="Адрес выполнения работ">
+                </span><br>
+                <span class="wpcf7-form-control-wrap textarea-716">
+                    <textarea name="textarea-716" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea popup__input popup__task" aria-invalid="false" placeholder="Что необходимо сделать?"></textarea>
+                </span><br>
+                <input type="submit" value="Отправить" class="button wpcf7-form-control wpcf7-submit popup__submit"><span class="ajax-loader"></span><br>
+                <label class="popup__acceptance" id="p-form">Даю согласие на <a href="https://takelag.info/privacy-policy/">обработку персональных данных</a> <input type="checkbox" checked="" required=""></label></p>
+                <input type="hidden" class="wpcf7-pum" value="{&quot;closepopup&quot;:false,&quot;closedelay&quot;:0,&quot;openpopup&quot;:false,&quot;openpopup_id&quot;:0}"><div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
+            </form>
         </div>
 
         <div class="section-text width-50 has-divider">
@@ -179,23 +390,23 @@
         <div class="photos-wrapper">
 
             <figure class="photo">
-                <img width="100%" height="350" data-lazy="/wp-content/uploads/2020/07/1.jpg" alt="">
+                <img src="assets/img/1.jpg" width="100%" height="350" data-lazy="" alt="">
             </figure>
 
             <figure class="photo">
-                <img width="100%" height="350" data-lazy="/wp-content/uploads/2020/07/2.jpg" alt="">
+                <img src="assets/img/2.jpg" width="100%" height="350" data-lazy="" alt="">
             </figure>
 
             <figure class="photo">
-                <img width="100%" height="350" data-lazy="/wp-content/uploads/2020/07/3.jpg" alt="">
+                <img src="assets/img/3.jpg" width="100%" height="350" data-lazy="" alt="">
             </figure>
 
             <figure class="photo">
-                <img width="100%" height="350" data-lazy="/wp-content/uploads/2020/07/4.jpg" alt="">
+                <img src="assets/img/4.jpg" width="100%" height="350" data-lazy="" alt="">
             </figure>
 
             <figure class="photo">
-                <img width="100%" height="350" data-lazy="/wp-content/uploads/2022/02/43.jpg" alt="">
+                <img src="assets/img/43.jpg" width="100%" height="350" data-lazy="" alt="">
             </figure>
         </div>
 
@@ -219,42 +430,42 @@
             <ul class="faq-tabs__list">
 
                 <li class="faq-tab">
-                    <header class="faq-tab__heading flex">Какие существуют этапы такелажа станков и оборудования?</header>
+                    <button class="faq-tab__heading flex">Какие существуют этапы такелажа станков и оборудования?</button>
                     <div class="faq-tab__body">
                         <p class="faq-tab__body__items">Монтаж/демонтаж, погрузка/разгрузка, перевозка оборудования. В некоторых случаях специалисты нашей компании осуществляют пусконаладочные работы.</p>
                     </div>
                 </li>
 
                 <li class="faq-tab">
-                    <header class="faq-tab__heading flex">Сотрудники вашей компании соблюдают меры безопасности при такелаже трансформаторов и энергетических установок?</header>
+                    <button class="faq-tab__heading flex">Сотрудники вашей компании соблюдают меры безопасности при такелаже трансформаторов и энергетических установок?</button>
                     <div class="faq-tab__body">
                         <p class="faq-tab__body__items">Наш персонал постоянно повышает свою квалификацию, проходит аттестации, чтобы выполнять поставленные задачи с соблюдением всех мер безопасности.</p>
                     </div>
                 </li>
 
                 <li class="faq-tab">
-                    <header class="faq-tab__heading flex">Сколько стоят услуги такелажников в Москве?</header>
+                    <button class="faq-tab__heading flex">Сколько стоят услуги такелажников в Москве?</button>
                     <div class="faq-tab__body">
                         <p class="faq-tab__body__items">Цена зависит от уровня опасности оборудования, механических характеристик, сложности подготовительных мероприятий, наличия подъездных путей. На тарификацию также влияет расстояние, на которое производится перемещение оборудования клиента.</p>
                     </div>
                 </li>
 
                 <li class="faq-tab">
-                    <header class="faq-tab__heading flex">Как оформить вызов такелажников в Московской области?</header>
+                    <button class="faq-tab__heading flex">Как оформить вызов такелажников в Московской области?</button>
                     <div class="faq-tab__body">
                         <p class="faq-tab__body__items">Вы можете заполнить форму обратной связи или позвонить менеджеру по номеру телефона: +7 (495) 227-62-42.</p>
                     </div>
                 </li>
 
                 <li class="faq-tab">
-                    <header class="faq-tab__heading flex">Что относится к негабаритному грузу?</header>
+                    <button class="faq-tab__heading flex">Что относится к негабаритному грузу?</button>
                     <div class="faq-tab__body">
                         <p class="faq-tab__body__items">Опоры, емкости, яхты, тяжелая спецтехника.</p>
                     </div>
                 </li>
 
                 <li class="faq-tab">
-                    <header class="faq-tab__heading flex">Можно у вас заказать такелажные работы – перевозку хрупких грузов?</header>
+                    <button class="faq-tab__heading flex">Можно у вас заказать такелажные работы – перевозку хрупких грузов?</button>
                     <div class="faq-tab__body">
                         <p class="faq-tab__body__items">Да, наши специалисты успешно транспортируют сантехнику, музыкальные инструменты, электронику.</p>
                     </div>
@@ -278,17 +489,17 @@
         <ul class="reviews-list flex">
 
             <li class="review">
-                <header class="review-name">Олег</header>
+                <button class="review-name">Олег</button>
                 <p class="review-text">Заказывал демонтаж оборудования в Москве. Остался доволен быстро выполненной работой, а также вежливостью работников данной производственно-такелажной компании. Всем рекомендую.</p>
             </li>
             
             <li class="review">
-                <header class="review-name">Григорий</header>
+                <button class="review-name">Григорий</button>
                 <p class="review-text">Понадобилась перевозка прессов в Подмосковье. Долго выбирал компанию, которая займется этим ответственным делом. Остановился на ООО “ПТК”. Договорились на определенную дату. Бригада прибыла в назначенное время. Такелаж прессов занял 2 дня, хотя я рассчитывал на 3-4. Остались только положительные впечатления.</p>
             </li>
 
             <li class="review">
-                <header class="review-name">Виталий</header>
+                <button class="review-name">Виталий</button>
                 <p class="review-text">Сотрудники этой компании приятно удивили: приехали на объект, определили размер и вес перевозимого груза, запланировали погрузочно-разгрузочные работы на определенный день, сообщили финальную стоимость услуг. Крупногабаритный груз был перемещен в другую часть Москвы быстро и без непредвиденных ситуаций.</p>
             </li>
 
@@ -297,9 +508,38 @@
     </div>
 </section>
 
-</body>
-<footer>
+<footer class="contacts">
+    <div class="container-wide flex">
+
+        <div class="contacts-map width-50">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A04d4a40fa4c2e199787bced34062e46c70f9e6498f4ea863570857a8c8c86edc&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+
+        <div class="contacts-data flex width-50">
+            <div class="contacts-data__main">
+                <p><a class="contacts-data__item contacts__phone" href="tel:84952276242" title="Позвонить по телефону">+7 (495) 227-62-42</a></p>
+                <p><a class="contacts-data__item contacts__mail" href="mailto:psgtakelage@yandex.ru" title="написать на почту">psgtakelage@yandex.ru</a></p>
+            </div>
+
+            <p class="contacts-data__item contacts__adress">Московская область, город Долгопрудный, микрорайон Павелцево, ул.Набережная 14, офис 2</p>
+
+            <p class="contacts-data__footer">ИП Зубковский Евгений Владимирович<br>ИНН 540325157959<br>ОГРНИП 319547600024870</p>
+        </div>
+
+    </div>
 </footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous"></script>
+
 <link href="style.css" rel="stylesheet">
 <link href="main-page.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
+<script src="scripts.js"></script>
+
 </html>

@@ -1,0 +1,258 @@
+.loyalty-page__content {
+    text-align: center;
+}
+
+.loyalty-page__hero {
+    background-color: var(--dark-color);
+}
+
+.loyalty-page__hero .container {
+    max-width: 890px;
+    padding-top: 56px; 
+    padding-bottom: 88px;
+}
+
+.loyalty-page__heading {
+    margin-bottom: 24px;
+    color: var(--accent-color);
+}
+
+.loyalty-page__heading-description {
+    color: var(--light-text);
+    font-size: 1.5em;
+}
+
+
+
+
+.loyalty-conditions .container {
+    max-width: 1200px;
+    padding-top: 72px;
+    padding-bottom: 58px;
+}
+
+.conditions-heading {
+    margin-bottom: 24px;
+    color: var(--accent-color);
+}
+
+.conditions-list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: end;
+
+    margin-bottom: 72px;
+}
+
+.conditions-list__item {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.premium-cars {
+    max-width: 240px;
+}
+
+.hotels-img {
+    max-width: 222px;
+}
+
+.night-clubs {
+    max-width: 300px;
+}
+
+.loyalty-text, .loyalty-page__parnters-list {
+    max-width: 890px;
+}
+
+.loyalty-text {
+    margin: 0 auto 50px;
+    font-size: 1.5em;
+    color: var(--gray-hover);
+}
+
+
+.loyalty-page__parnters-list {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.parnter:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+
+.loyalty__description {
+    background-color: var(--dark-color);
+}
+
+.loyalty__description .container {
+    padding-top: 72px; 
+    padding-bottom: 80px;
+}
+
+.loyalty__description--image-wrapper {
+    max-width: 854px;
+    margin: 0 auto 56px;
+}
+
+.loyalty__description--text {
+    color: var(--light-text);
+    font-size: 1.5em;
+}
+
+
+
+
+.mileage-system .container {
+    max-width: 738px;
+    padding: 80px 0 120px;
+}
+
+.mileage-system__header {
+    margin-bottom: 40px;
+    font-size: 6em;
+}
+
+.mileage-system__subheader {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+.mileage-system__text {
+    font-size: 1.125em;
+}
+
+
+
+
+.loyalty-page__parnters-list {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parnter:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .premium-cars {
+        max-width: 170px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .loyalty-page__content p {
+        font-size: 1em;
+    }
+
+    .loyalty-page__content .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .loyalty-page__heading-description {
+        font-size: 1.125em;
+    }
+
+
+
+
+    .conditions-list__item:nth-child(3) {
+        width: 100%;
+    }
+
+    .conditions-list__item:nth-child(3) img {
+        max-width: 264px;
+    }
+
+
+
+    
+    .mileage-system__header {
+        font-size: 4em;
+    }
+
+    .mileage-system__text {
+        font-size: 1em;
+    }
+
+
+    .parnter {
+        margin-bottom: 66px;
+    }
+
+    .loyalty-conditions .container {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 676px) {
+    .conditions-list__item {
+        width: 100%;
+    }
+
+    .conditions-list__image {
+        max-width: 264px;
+    }
+
+    .hotels-img {
+        width: 172px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loyalty-page__content .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .conditions-list__item .hotels-img {
+        max-width: 172px;
+    }
+
+    .conditions-list__item {
+        width: 100%;
+    }
+
+    .conditions-list__image {
+        max-width: 264px;
+    }
+
+    .parnter {
+        padding: 0 25px;
+    }
+
+    .parnter:not(:last-child) {
+        margin-right: 0;
+    }
+
+
+
+    .loyalty-page__parnters-list {
+        justify-content: space-evenly;
+    }
+
+    .mileage-system__header {
+        font-size: 2.625em;
+    }
+}
+
+@media (max-width: 376px) {
+    .loyalty-page__content .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .parnter {
+        padding: 0 15px;
+    }
+}

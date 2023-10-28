@@ -1,0 +1,342 @@
+.our-services, .about-us {
+    background-color: var(--dark-color);
+}
+
+.hero {
+    display: flex;
+    align-items: end;
+
+    min-height: 443px;
+
+    background: linear-gradient(0deg, rgba(52, 56, 71, 0.64) 0%, rgba(52, 56, 71, 0) 39.95%) no-repeat, url('../assets/img/hero-image.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.our-services {
+    padding: 56px 0 88px;
+}
+
+.our-services .container {
+    max-width: 900px;
+}
+
+.services-card:not(:last-child) {
+    margin-bottom: 56px;
+}
+
+.services-card__heading {
+    margin-bottom: 8px;
+    color: var(--light-text);
+    line-height: 0.8em;
+}
+
+.services-card_image-wrapper {
+    min-width: 232px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.services-card__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 73%;
+    padding: 5px 25px;
+}
+
+.services-card__description {
+    margin-bottom: 8px;
+    color: var(--grey-hover);
+    font-size: 1.12em;
+    font-weight: 450;
+}
+
+.button--services-card {
+    justify-content: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+
+
+
+.loyalty-section-header {
+    margin-bottom: 45px;
+}
+
+.break-word {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.loyalty-offers {
+    margin-bottom: 56px;
+}
+
+.loyalty-offer__image {
+    width: auto;
+    max-width: 100%;
+}
+
+.loyalty-offer__description {
+    color: var(--grey-hover);
+}
+
+.loyalty-system {
+    padding: 56px 0 96px;
+    text-align: center;
+}
+
+.loyalty-system .container:first-child {
+    max-width: 900px;
+}
+
+.loyalty-system .container:nth-child(2) {
+    max-width: 1200px;
+}
+
+.loyalty-offer:not(:last-child) {
+    margin-right: 20px;
+}
+
+.loyalty-offer__image-wrap, .loyalty-offer__heading {
+    margin-bottom: 16px;
+}
+
+.conditions-heading {
+    margin-bottom: 24px;
+    color: var(--accent-color);
+}
+
+.conditions-list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.conditions-list__item {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.premium-cars {
+    max-width: 240px;
+}
+
+.hotels-img {
+    max-width: 222px;
+}
+
+.night-clubs {
+    max-width: 300px;
+}
+
+
+
+
+.about-us {
+    padding: 56px 0 64px;
+}
+
+.about-us .container {
+    max-width: 860px;
+}
+
+.about-us__text {
+    color: var(--light-text);
+}
+
+.about-us__text:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+
+
+
+.our-partners {
+    padding: 56px 0 96px;
+    text-align: center;
+}
+
+.our-partners__heading {
+    margin-bottom: 24px;
+}
+
+.parnters-list {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parnter:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+
+@media (max-width:1024px) {
+    .services-card {
+        flex-wrap: nowrap;
+    }
+
+    .loyalty-offers {
+        flex-wrap: nowrap;
+    }
+
+    .premium-cars {
+        max-width: 170px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 280px;
+    }
+
+    .services-card__heading {
+        font-size: 2em;
+    }
+
+    .destination__heading {
+        font-size: 1.25em;
+    }
+
+    .loyalty-section-header {
+        margin-bottom: 0;
+    }
+
+    .loyalty-offers {
+        flex-wrap: wrap;
+        max-width: 435px;
+        margin: 0 auto 56px;
+    }
+
+    .loyalty-offer:not(:last-child) {
+        margin: 0 0 53px 0;
+    }
+
+
+
+    .our-partners {
+        padding: 56px 0 0;
+    }
+
+    .our-partners__heading {
+        font-size: 2em;
+    }
+
+    .parnter {
+        padding: 0 25px 66px;
+    }
+
+    .parnter:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .parnters-list {
+        justify-content: space-evenly;
+    }
+
+    .other-meta__item {
+        width: 100%;
+    }
+
+
+
+
+    .conditions-heading {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .conditions-list__item:nth-child(3) {
+        width: 100%;
+    }
+
+    .conditions-list__item:nth-child(3) img {
+        max-width: 264px;
+    }
+}
+
+@media (max-width: 676px) {
+    .services-card {
+        flex-wrap: wrap;
+    }
+
+    .services-card__description-wrapper {
+        width: 100%;
+        padding: 24px 0 0;
+    }
+
+    .services-card:not(:last-child) {
+        margin-bottom: 66px;
+    }
+
+    .conditions-list__item {
+        width: 100%;
+    }
+
+    .conditions-list__image {
+        max-width: 264px;
+    }
+
+    .hotels-img {
+        width: 172px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loyalty-offer__image {
+        width: 100%;
+    }
+
+    .tracking-offer img {
+        width: 199px;
+    }
+
+
+
+    .loyalty-offer__heading {
+        font-size: 2em;
+    }
+
+
+
+    .conditions-list__image {
+        max-width: 204px;
+    }
+}
+
+@media (max-width: 440px) {
+    .conditions-heading {
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 338px) {
+    .radio-labels {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+
+    .loyalty-section-header {
+        font-size: 2em;
+    }
+
+    .break-word {
+        width: 100%;
+    }
+
+
+    .parnter {
+        padding: 0 15px 65px;
+    }
+}

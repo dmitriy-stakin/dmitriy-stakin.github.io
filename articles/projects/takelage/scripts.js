@@ -32,7 +32,7 @@ closeBtns.forEach( button => {
 var openBtn
 document.querySelectorAll('.custom-header .menu-item-has-children').forEach (item => {
     openBtn = document.createElement('span')
-    openBtn.innerHTML = "<object data='/wp-content/themes/kalium-child/assets/svg/chevron.svg' width='25' height='25' > </object>";
+    openBtn.innerHTML = "<object data='assets/icons/chevron.svg' width='25' height='25' > </object>";
     openBtn.classList.add('open-submenu')
     item.insertBefore(openBtn, item.querySelector('.sub-menu'))   
 })
@@ -58,10 +58,6 @@ document.querySelectorAll('.open-submenu').forEach( button => {
 var header = document.querySelector('.custom-header');
 var mobMenu = document.querySelector('.side-menu')
 var scrollPrev = 0;
-
-if(document.querySelector('body:not(body.home)')) {
-    document.querySelector('body:not(body.home)').style.paddingTop = header.offsetHeight + 'px';
-}
 
 function func() {
     scrollPos = window.scrollY;
@@ -96,7 +92,6 @@ func();
 
 jQuery(document).ready(function(){
     jQuery('.photos-wrapper').slick({
-        lazyLoad: 'ondemand',
         dots: true,
         arrows: false,
         slidesToShow: 4,

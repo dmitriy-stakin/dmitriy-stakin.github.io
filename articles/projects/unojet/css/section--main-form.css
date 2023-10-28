@@ -1,0 +1,612 @@
+/* pages where this file is needed: main-page, shuttle, empty-legs. */
+
+.calculator {
+    padding-top: 32px;
+    padding-bottom: 60px;
+    scroll-margin-top: 80px;
+}
+
+.calculator__form {
+    display: none;
+}
+
+.calculator__form.active {
+    display: block;
+}
+
+.form-header {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.radio-label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.radio-labels, .calculator__menu {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.calculator__menu li {
+    display: inline-block;
+}
+
+.radio-labels::-webkit-scrollbar, .calculator__menu::-webkit-scrollbar, .form-aircraft-style::-webkit-scrollbar {
+    display: none;
+}
+
+.form-header__item {
+    position: relative;
+    padding: 8px 16px;
+    color: var(--grey-hover);
+}
+
+.form-header__item a {
+    color: var(--grey-hover);
+}
+
+.form-header__item:after, .form-header__item a.active:after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    display: none;
+    width: 100%;
+    height: 1px;
+    margin-top: 11px;
+
+    background-color: var(--accent-color);
+}
+
+.radio-active, .form-header__item a.active {
+    color: var(--accent-color);
+}
+
+.form-header__item.radio-active:after, .form-header__item a.active::after {
+    display: block;
+}
+
+.form-header__item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.form-header__item a {
+    font-weight: 400;
+}
+
+.form-aircraft-style {
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    transition: max-height .3s;
+}
+
+.aircraft-style__label {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
+    padding: 14px;
+
+    border: 1px solid var(--grey-hover);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.aircraft-style__label:not(:last-child) {
+    margin-right: 40px;
+}
+
+.aircraft-style__icon-wrap {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aircraft-style__text {
+    color: var(--grey-hover);
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.flight-request__radio {
+    display: none;
+}
+
+.flight-request__radio:checked + .aircraft-style__label {
+    border-color: var(--light-text);
+    background-color: var(--accent-color);
+}
+
+.flight-request__radio:checked + .aircraft-style__label .aircraft-style__icon {
+    fill: var(--light-text);
+}
+
+.flight-request__radio:checked + .aircraft-style__label .wing {
+    stroke: var(--light-text);
+}
+
+.flight-request__radio:checked + .aircraft-style__label .aircraft-style__text {
+    color: var(--light-text);
+}
+
+.flight-request__radio:checked + .aircraft-style__label .wing {
+    fill: var(--accent-color);
+}
+
+.fields {
+    grid-template-columns: 1fr 1fr 200px;
+}
+
+
+
+.flight-request__fields {
+    grid-template-columns: 1fr 1fr 200px 322px;
+}
+
+.fields, .flight-request__fields {
+    display: grid;
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.fields input:not(:last-child) {
+    margin-right: 16px;
+}
+
+.shuttle-calc-form .selected-place {
+    max-width: 60%;
+}
+
+.input--places-from-wrapper::before {
+    content: 'From';
+}
+
+.input--places-to-wrapper::before {
+    content: 'To';
+}
+
+.input--passenger-wrapper::before {
+    content: 'Passenger';
+}
+
+.input--email-wrapper::before {
+    content: 'Email or phone';
+}
+
+.input--date-wrapper::before {
+    content: 'Date';
+}
+
+.invalid input {
+    border-color: var(--accent-red);
+}
+
+.invalid::after {
+    position: absolute;
+    bottom: -6px;
+    left: 80px;
+    z-index: 2;
+
+    padding: 0 4px;
+
+    color: var(--accent-red);
+    background-color: #ffffff;
+    font-size: 0.625em;
+    font-weight: 600;
+
+    pointer-events: none;
+}
+
+.input--email-wrapper.invalid::after {
+    content: 'Enter a valid email address';
+}
+
+.flight-request__fields input:focus-visible {
+    outline: 0;
+}
+
+.input--places-from {
+    background-image: url(/assets/icons/section--main-form/from.svg);
+}
+
+.input--places-from::-webkit-calendar-picker-indicator , .input--places-to::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
+
+.input--places-to {
+    background-image: url(/assets/icons/section--main-form/to.svg);
+}
+
+.input--passenger {
+    width: 100%;
+    background-image: url(/assets/icons/section--main-form/passenger.svg);
+}
+
+.input--contact {
+    background-image: url(/assets/icons/section--main-form/contact-data.svg);
+}
+
+.input--date {
+    background-image: url(/assets/icons/section--main-form/calendar.svg);
+}
+
+.places {
+    max-height: 230px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px black;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    width: 100%;
+    color: grey;
+    background: white;
+    z-index: 100;
+    margin-top: 3.1em;
+}
+
+.places-list {
+    overflow-y: scroll;
+    padding: 10px;
+}
+.places-list {
+    overflow-y: scroll;
+    padding: 10px 0;
+    max-height: 230px;
+}
+.places-list::-webkit-scrollbar {
+    width:10px;
+}
+.places-list::-webkit-scrollbar-track {
+    background-color: #eeeef3;
+}
+.places-list::-webkit-scrollbar-thumb {
+    background-color:#838794;
+}
+.places-list li:hover {
+    background: #eeeef3;
+}
+.places li {
+    background: white;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.places li b {
+    display: block;
+    color: black;
+}
+
+.selected-place {
+    margin-left: 6em;
+    margin-top: -3.3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+    font-size: .87em;
+    color: #838794;
+}
+
+.selected-place b {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.1em;
+    color: #262626;
+}
+
+.form-aircraft-style, .calculator__menu, .radio-labels {
+    overflow-x: scroll;
+    margin-left: -60px;
+    margin-right: -60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.form-aircraft-style__heading {
+    margin-bottom: 8px;
+}
+
+.button--form-aircraft {
+    display: none;
+    width: 100%;
+    padding: 17px 30px;
+
+    color: var(--grey-hover);
+    background-color: transparent;
+    border-radius: 73px;
+    border: 1px solid var(--grey-hover);
+
+    font-size: 14px;
+    font-weight: 600; 
+    text-align: left;
+}
+
+.button--form-aircraft__icon {
+    margin-right: 20px;
+}
+
+.acceptance {
+    display: inline-block;
+    margin-top: 8px;
+    
+}
+
+.form-aircraft-style__heading, .acceptance {
+    color: var(--grey-hover);
+    font-weight: 600;
+}
+
+
+
+.calculation-result {
+    padding-top: 24px;
+}
+
+.result-heading {
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--grey-hover);
+}
+
+.destination {
+    margin-bottom: 24px;
+}
+
+.destination__heading {
+    color: var(--dark-color);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.destination__description {
+    color: var(--grey-hover);
+}
+
+.divider {
+    align-items: center;
+    padding: 0 40px;
+}
+
+.flight-meta {
+    margin-bottom: 35px;
+}
+
+.main-meta {
+    margin-right: 133px;
+}
+
+.main-meta__item:first-child {
+    margin-right: 60px;
+}
+
+.flight-meta, .main-meta, .other-meta {
+    flex-wrap: wrap;
+}
+
+.other-meta__item:not(:last-child) {
+    margin-right: 56px;
+}
+
+.flight-meta_name {
+    color: var(--grey-hover);
+    font-weight: 600;
+}
+
+.price-link {
+    display: inline-block;
+    border-bottom: 1px dashed var(--grey-hover);
+    font-weight: 700;
+}
+
+
+@media (max-width: 1270px) {
+    .fields {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 55px 55px;
+    }
+
+    .fields:not(.flight-request__fields) .input--passenger-wrapper {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .selected-place {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1114px) {
+    .form-header{
+        flex-direction: column-reverse;
+    }
+
+    .calc-nav {
+        margin-bottom: 32px;
+    }
+}
+ 
+@media (max-width: 1024px) {
+    .aircraft-style__label:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    .calc-nav {
+        width: 100%;
+    }
+
+    .radio-labels {
+        width: calc(100% + 80px);
+    }
+
+    .main-meta {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 809px) {
+    .other-meta__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {    
+    input {
+        background: transparent no-repeat 15px center;
+    }
+    .selected-place {
+        max-width: 190px;
+        margin-left: 4.5em;
+    }
+    
+    .aircraft-style__label {
+        min-width: 120px;
+    }
+
+    .divider {
+        padding: 0 19px;
+    }
+}
+
+@media (max-width: 690px) {
+    .selected-place {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 572px) {
+    input {
+        background: transparent no-repeat 25px center;
+    }
+    .flight-request__fields, .fields {
+        grid-template-columns: 1fr;
+    }
+    .fields:not(.flight-request__fields) .input--passenger-wrapper {
+        grid-column-end: unset;
+    }
+    .selected-place {
+        max-width: 200px;
+        margin-left: 6em;
+    }
+    .fields .input--passenger {
+        grid-column-end: 2;
+    }
+
+    .flight-request__fields {
+        margin-bottom: 16px;
+    }
+
+    .form-header__item {
+        font-size: 0.875em;
+    }
+    
+    .form-header__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .input--places-from, .input--places-to {
+        flex: auto;
+    }
+
+    .destination {
+        align-items: center;
+    }
+
+    .destination__heading {
+        font-size: 1em;
+    }
+
+    .destination__from, .destination__to {
+        width: 45%;
+    }
+
+    .destination__description, .flight-meta_name {
+        font-size: 0.875em;
+    }
+
+    .main-meta {
+        margin-right: 0;
+    }
+
+    .other-meta__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .other-meta__item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .travel-map {
+        margin: 0 -60px;
+        height: 480px;
+    }
+
+    .travel-map img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .button--form-aircraft {
+        display: flex;
+        margin-bottom: 16px;
+        align-items: center;
+    }
+
+    .form-aircraft-style {
+        flex-wrap: wrap;
+        max-height: 0px;
+        margin-bottom: 0;
+    }
+
+    .aircraft-style__label {
+        width: calc(33% - 16px);
+        min-width: auto;
+        margin-bottom: 16px;
+    }
+
+    .aircraft-style__label:nth-child(3n) {
+       margin-right: 0; 
+    }
+
+    .aircraft-toggle__checkbox:checked + .form-aircraft-style {
+        max-height: 800px;
+        margin-top: 16px;
+    }
+
+    .destination__heading {
+        font-size: 1em;
+    }
+
+    .divider {
+        width: 15%;
+        padding: 0 20px 0 0;
+    }   
+}
+
+@media (max-width: 480px) {
+    .travel-map {
+        margin: 0 -40px;
+    }
+}
+
+@media (max-width: 468px) {
+    .aircraft-style__label {
+        width: calc(50% - 16px);
+    }
+
+    .aircraft-style__label:nth-child(2n) {
+        margin-right: 0; 
+     }
+}

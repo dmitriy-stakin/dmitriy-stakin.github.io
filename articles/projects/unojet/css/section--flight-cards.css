@@ -1,0 +1,435 @@
+.flight-cards-section {
+    padding-bottom: 120px;
+}
+
+.flight-cards__list {
+    margin-bottom: 48px;
+}
+
+.flight-card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.flight-card {
+    border: 2px solid var(--grey-hover);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.flight-card__image-wrapper {
+    width: 100%;
+    max-width: 268px;
+}
+
+.flight-card__image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.flight-card__content > .row {
+    justify-content: space-between;
+}
+
+.flight-card__content {
+    width: 100%;
+    padding: 32px;
+}
+
+.flight-card__meta {
+    margin-bottom: 12px;
+}
+
+.days-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.days-item {
+    margin-bottom: 5px;
+    padding: 2px 12px;
+    border: 1px solid var(--dark-color);
+}
+
+.flight-card__meta--days {
+    flex-wrap: wrap;
+}
+
+.flight-card__meta--days-mobile {
+    display: none;
+}
+
+.flight-card__meta--days-mobile .flight-card__meta-item {
+    margin-bottom: 4px;
+}
+
+.flight-card__meta-item {
+    border-radius: 64px;
+}
+
+.flight-card__params-item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.flight-card__params-item {
+    margin-bottom: 4px;
+    padding: 4px 24px;
+    background-color: var(--dark-color);
+    color: var(--light-text);
+}
+
+.flight-card__days-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.flight-card__days-item {
+    margin-bottom: 5px;
+    padding: 2px 12px;
+    border: 1px solid var(--dark-color);
+}
+
+.flight-card__directions--row {
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+}
+
+div.row.flight-card__directions {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flight-card-heading {
+    font-weight: 600;
+}
+
+.flight-card-divider {
+    margin: 0 24px;
+}
+
+.flight-card__flight-time, .flight-card__flight-price {
+    width: 100%;
+}
+
+.flight-card__flight-time {
+    color: var(--grey-hover);
+    font-weight: 600;
+}
+
+.flight-card__flight-price {
+    margin-top: 4px;
+    color: var(--dark-color);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.flight-card__service:not(:last-child) {
+    margin-right: 24px;
+}
+
+.flight-card__service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    max-width: 60px;
+}
+
+.flight-card__service-text {
+    font-weight: 600;
+}
+
+.flight-card__card-button {
+    width: 100%;
+    padding: 11px;
+}
+
+
+
+
+/*additional styles for profile page*/
+.flight-card__button--more-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.flight-card__flight-route .map {
+    display: block;
+    height: 439px;
+    object-fit: cover;
+}
+
+.flight-card__flight-route {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+
+.flight-card__button-more.open + .flight-card__flight-route {
+    max-height: 439px;
+}
+
+.flight-card__button-more {
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--dark-color);
+}
+
+.flight-card-route__chevron {
+    margin-left: 32px;
+    transition: transform .2s;
+}
+
+.flight-card__button-more.open .flight-card-route__chevron {
+    transform: rotate(180deg);
+}
+
+.flight-cards__list {
+    margin-bottom: 47px;
+}
+
+.flight-card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.applications-list .flight-card {
+    flex-wrap: wrap;
+    border: 2px solid var(--grey-hover);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.applications-list .flight-card__image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.applications .flight-card__meta {
+    flex-wrap: wrap;
+}
+
+.applications-list .flight-card__content {
+    max-width: calc(100% - 268px);
+}
+
+
+.row.flight-card__meta--params {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.applications-list .flight__meta-wrapper {
+    flex-wrap: wrap;
+}
+
+.applications-list .flight__meta-item {
+    border-radius: 64px;
+}
+
+.button--apply-points {
+    padding: 8px 24px 12px;
+}
+
+.flight__flight-time, .flight__flight-price {
+    width: 100%;
+}
+
+.flight__flight-price {
+    white-space: nowrap;
+}
+
+.flight__flight-time {
+    color: var(--grey-hover);
+    font-weight: 600;
+}
+
+.pf__button-wrapper {
+    align-items: center;
+    margin-top: 28px;
+}
+
+.flight__flight-price {
+    margin-right: 40px;
+    color: var(--dark-color);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.flight__meta, .application-status {
+    font-size: 1.25em;
+}
+
+.count, .application-status, .time-count, .distance-count {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+
+
+
+@media (max-width:1024px) {
+    .flight-card__image-wrapper {
+        max-width: 140px;
+    }
+
+    .applications-list .flight-card__image-wrapper {
+        width: 100%;
+    }
+
+    .flight-card__directions {
+        width: 67%;
+    }
+}
+
+@media (max-width: 945px) {
+    .applications-list .flight-card__image-wrapper {
+        max-width: 100%;
+        max-height: 152px;
+    }
+
+    .applications-list .flight-card__content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:885px) {
+    .flight-page__content .hero {
+        padding-top: 203px;
+    }
+
+    .flight-card {
+        flex-wrap: wrap;
+    }
+
+    .flight-card__image-wrapper {
+        max-width: 100%;
+        max-height: 152px;
+    }
+
+    .flight-card__content:not(.applications-list .flight-card__content) > .row {
+        justify-content: flex-start;
+    }
+
+    .flight-card__directions--row {
+        margin-bottom: 24px;
+    }
+
+    .applications-list .flight-card-heading {
+        font-size: 1.5em;
+    }
+
+    .flight-card__services {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -50px;
+    }
+
+    .flight-card__service {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .flight-card__service:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .flight-card__service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flight-card__service-text {
+        margin-left: 12px;
+    }
+
+    .flight-card__meta--days-desktop {
+        display: none;
+    }
+
+    .flight-card__meta--days-mobile {
+        display: flex;
+    }
+
+    .flight-card_flight-price {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .flight-card__params-item, .flight-card__days-item, .flight-card__flight-time, .button--apply-points {
+        font-size: 0.875em;
+    }
+
+    .pf-meta__item, .application-status, .flight-card__passenger {
+        font-size: 1em;
+    }
+
+    .flight-card__flight-price {
+        margin-bottom: 8px;
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 680px) {
+    .flight-card__directions--row {
+        flex-wrap: wrap;
+    }
+
+    .flight-card__directions {
+        width: 100%;
+    }
+
+    .flight-card__services {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .flight-card__service {
+        align-items: unset;
+        max-width: 60px;
+    }
+
+    .flight-card__service-text {
+        margin-left: 0;
+    }
+
+    .flight-card__service:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flight-card__content {
+        padding: 16px;
+    }
+
+    .flight__flight-route .map {
+        height: 400px;
+    }
+
+    .applications-list .flight-card__meta div:first-child {
+        margin-right: 0;
+    }
+
+    .applications-list .pf__button-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 376px) {
+    .flight__passenger {
+        width: 100%;
+    }
+
+    .applications-list .flight-card-divider {
+        margin: 0 12px;
+    }
+
+    .flight-card-divider {
+        margin: 0 15px;
+    }
+}

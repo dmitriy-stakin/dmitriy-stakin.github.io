@@ -1,0 +1,149 @@
+.faq-page__content .container {
+    max-width: 890px;
+    padding: 0;
+}
+
+
+
+
+.faq-hero {
+    padding: 32px 0 40px;
+    background-color: var(--dark-color);
+}
+
+.faq__heading {
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+
+
+
+.accordiron-section .container {
+    padding: 52px 0 56px;
+}
+
+.accordion-item {
+    padding: 16px 0 0;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.accordion-button {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.accordion-heading {
+    margin: 0;
+    color: var(--dark-color);
+    font-size: 1.5em;
+}
+
+.accordion-text {
+    max-height: 0;
+    transition: max-height .5s, margin-bottom .5s;
+    overflow: hidden;
+}
+
+.accordion-active + .accordion-text {
+    max-height: 600px;   
+    margin-bottom: 19px;
+}
+
+.accordion-icon {
+    margin-right: 10px;
+    transition: transform .2s;
+}
+
+.accordion-active .accordion-icon {
+    transform: rotate(-180deg);
+}
+
+
+
+
+.faq-form-section .container {
+    padding-bottom: 120px;
+}
+
+.faq-form__heading {
+    color: var(--dark-color);
+    font-size: 2em;
+}
+
+.faq-form-input {
+    padding: 17px 24px;
+}
+
+.input-title-wrapper::before {
+    content: 'Title of question';
+}
+
+.input-question-wrapper::before {
+    content: 'Question';
+}
+
+.input-email-wrapper::before {
+    content: 'Email';
+}
+
+.faq-form > div {
+    margin-bottom: 16px;
+}
+
+.faq-form-input--submit {
+    margin-top: 8px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .faq-page__content .container {
+        max-width: 964px;
+    }
+
+    .faq-form-section .container {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .faq-page__content .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-page__content .container {
+        max-width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-page__content .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 376px) {
+    .faq-page__content .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

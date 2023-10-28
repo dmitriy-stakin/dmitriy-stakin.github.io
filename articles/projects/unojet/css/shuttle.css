@@ -1,0 +1,356 @@
+.shuttle-page__content .hero {
+    padding-top: 240px;
+    background: url('../assets/img/page--shuttle/shuttle-bg.webp') center;
+    background-size: cover;
+}
+
+.shuttle__heading {
+    color: var(--light-text);
+}
+
+
+.shuttle-calc-form .fields {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55px;
+}
+
+
+.shuttle-cards-section {
+    padding-bottom: 120px;
+}
+
+.shuttle-cards__list {
+    margin-bottom: 48px;
+}
+
+.shuttle-card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.shuttle-card {
+    border: 2px solid var(--grey-hover);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.shuttle-card__image-wrapper {
+    width: 100%;
+    max-width: 268px;
+}
+
+.shuttle-card__image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.shuttle-card__content .row {
+    justify-content: space-between;
+}
+
+.shuttle-card__content {
+    width: 100%;
+    padding: 32px;
+}
+
+.shuttle-card__meta {
+    margin-bottom: 12px;
+}
+
+.shuttle-card__meta--days {
+    flex-wrap: wrap;
+}
+
+.shuttle-card__meta--days-mobile {
+    display: none;
+}
+
+.shuttle-card__meta--days-mobile .shuttle__meta-item {
+    margin-bottom: 4px;
+}
+
+.shuttle__meta-item {
+    border-radius: 64px;
+}
+
+.shuttle__params-item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.shuttle__params-item {
+    margin-bottom: 4px;
+    padding: 4px 24px;
+    background-color: var(--dark-color);
+    color: var(--light-text);
+}
+
+.shuttle__days-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.shuttle__days-item {
+    padding: 2px 12px;
+    border: 1px solid var(--dark-color);
+}
+
+.shuttle-card__directions--row {
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+}
+
+div.row.shuttle-card__directions {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shuttle-heading {
+    font-weight: 600;
+}
+
+.shuttle-divider {
+    margin: 0 24px;
+}
+
+.shuttle_flight-time, .shuttle_flight-price {
+    width: 100%;
+}
+
+.shuttle_flight-time {
+    color: var(--grey-hover);
+    font-weight: 600;
+}
+
+.shuttle_flight-price {
+    margin-top: 4px;
+    color: var(--dark-color);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.flight-card__service:not(:last-child) {
+    margin-right: 24px;
+}
+
+.flight-card__service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    max-width: 60px;
+}
+
+.flight-card__service-text {
+    font-weight: 600;
+}
+
+
+
+
+.pagination {
+    justify-content: center;
+}
+
+.pagination-item {
+    margin: 0 7.5px;
+}
+
+.pagination-item:hover {
+    color: var(--light-text);
+    background-color: var(--grey-hover);
+}
+
+.right-wrap {
+    margin-left: 15px;
+}
+
+.left-wrap {
+    margin-right: 15px;
+}
+
+.pagination-button {
+    width:100%;
+    max-width: 132px;
+    padding: 11px 45px;
+    color: var(--light-text);
+    background-color: var(--dark-color);
+}
+
+.pagination-item {
+    width:100%;
+    max-width: 3em;
+    padding: 11px;
+
+    color: var(--grey-hover);
+    border: 1px solid var(--grey-hover);
+    border-radius: 73px;
+}
+
+.pagination-item.pagination-current {
+    color: var(--light-text);
+    background-color: var(--grey-hover);
+}
+
+
+
+
+@media (max-width:1024px) {
+    .form-header {
+        flex-direction: column-reverse;
+    }    
+
+    .calc-nav {
+        margin-bottom: 32px;
+    }
+
+
+
+
+    .shuttle-card__image-wrapper {
+        max-width: 140px;
+    }
+
+    .shuttle-card__directions {
+        width: 67%;
+    }
+}
+
+@media (max-width:885px) {
+    .shuttle-page__content .hero {
+        padding-top: 206px;
+    }
+
+    .shuttle-card {
+        flex-wrap: wrap;
+    }
+
+    .shuttle-card__image-wrapper {
+        max-width: 100%;
+        max-height: 152px;
+    }
+
+    .shuttle-card__content .row {
+        justify-content: flex-start;
+    }
+
+    .shuttle-card__directions--row {
+        margin-bottom: 24px;
+    }
+
+    .shuttle-heading {
+        font-size: 2em;
+    }
+
+    .shuttle-card__services {
+        flex-direction: column;
+    }
+
+    .shuttle-card__service {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .shuttle-card__service:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .shuttle-card__service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .shuttle-card__service-text {
+        margin-left: 12px;
+    }
+
+    .shuttle-card__meta--days-desktop {
+        display: none;
+    }
+
+    .shuttle-card__meta--days-mobile {
+        display: flex;
+    }
+
+    .shuttle_flight-price {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 717px) {
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .pagination-button_wrap {
+        width: 47%;
+        margin-top: 12px;
+    }
+
+    .left-wrap {
+        margin-right: 3%;
+        order: 2;
+    }
+
+    .right-wrap {
+        margin-left: 0;
+        order: 3;
+    }
+
+    .pagination-button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 677px) {
+    .shuttle-heading {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 630px) {
+    .shuttle-calc-form .fields {
+        grid-template-columns: 1fr;
+        grid-template-rows: 55px 55px;
+    }
+
+    .shuttle-card__directions--row {
+        flex-wrap: wrap;
+    }
+
+    .shuttle-card__directions {
+        width: 100%;
+    }
+
+    .shuttle-card__services {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .shuttle-card__service {
+        align-items: unset;
+        max-width: 60px;
+    }
+
+    .shuttle-card__service:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shuttle-page__content .hero {
+        padding-top: 103px;
+    }
+
+    .shuttle-card__content {
+        padding: 16px;
+    }
+
+    .pagination-item {
+        max-width: 2.5em;
+        margin: 0 6px;
+        padding: 7px;
+    }
+}
+
+

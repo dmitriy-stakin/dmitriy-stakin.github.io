@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>UnoJet</title>
+</head>
+<body>
+
+    <style>
+        body {
+            height: 200vh;
+        }
+    </style>
+
+<header class="row header">
+    <a class="site-logo" href="/" title="Go to the main page">
+        <img src="assets/img/section--header/logo.png" alt="unojet logo">
+    </a>
+
+    <nav class="header-navigation">
+        <ul class="row menu header-menu">
+            <li class="header-menu__item"><a href="/our-services.html" title="Our services">Our services</a></li>
+            <li class="header-menu__item"><a href="/aditional-services.html" title="Additional services">Additional services</a></li>
+            <li class="header-menu__item"><a href="/loyalty-system.html" title="Loyalty system">Loyalty system</a></li>
+            <li class="header-menu__item"><a href="/FAQ.html" title="FAQ">FAQ</a></li>
+            <li class="header-menu__item"><a href="/contacts.html" title="Contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="row header-search__wrap">
+        <input class="header-search" type="search" name="header-search" id="header-search" placeholder="Search">
+    </div>
+
+    <a class="button profile-button" href="/account/login.html">
+        <svg class="profile-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0728 18.1165V21.0734H2.92719V18.1165C2.92719 17.5112 3.08228 16.9594 3.39264 16.4542C3.70363 15.9475 4.11338 15.5648 4.62517 15.2996C5.81834 14.7032 7.02876 14.2566 8.25668 13.9588C9.48525 13.6617 10.7328 13.5131 12 13.5131C13.2671 13.5131 14.5147 13.6617 15.7433 13.9588C16.9712 14.2566 18.1817 14.7032 19.3748 15.2996C19.8866 15.5648 20.2964 15.9476 20.6074 16.4543C20.9178 16.9595 21.0728 17.5112 21.0728 18.1165ZM4.60665 18.1165V19.3939H19.3933V18.1165C19.3933 17.842 19.3235 17.584 19.1826 17.3526C19.0449 17.1282 18.8608 16.9494 18.6324 16.8224L18.6193 16.8159C17.5399 16.2762 16.4479 15.87 15.3439 15.5986C14.2398 15.328 13.125 15.1926 12 15.1926C10.875 15.1926 9.75991 15.3281 8.65586 15.5987C7.55192 15.87 6.45999 16.2759 5.38055 16.8156L5.36776 16.8227C5.13939 16.9496 4.95537 17.1282 4.81843 17.3528C4.67648 17.5844 4.60665 17.8417 4.60665 18.1165ZM12 11.6641C10.7962 11.6641 9.77398 11.2394 8.91525 10.3807C8.05651 9.52194 7.6318 8.49976 7.6318 7.29593C7.6318 6.09209 8.05651 5.06991 8.91525 4.21118C9.77398 3.35245 10.7962 2.92773 12 2.92773C13.2038 2.92773 14.226 3.35245 15.0847 4.21118C15.9435 5.06991 16.3682 6.09209 16.3682 7.29593C16.3682 8.49976 15.9435 9.52194 15.0847 10.3807C14.226 11.2394 13.2038 11.6641 12 11.6641ZM12 9.98466C12.7369 9.98466 13.3762 9.71812 13.8998 9.19454C14.4227 8.67163 14.6887 8.03266 14.6887 7.29593C14.6887 6.55919 14.4227 5.92023 13.8998 5.39731C13.3762 4.87373 12.7369 4.6072 12 4.6072C11.2632 4.6072 10.6243 4.87364 10.1015 5.39722C9.57778 5.92007 9.31126 6.55906 9.31126 7.29593C9.31126 8.03279 9.57778 8.67178 10.1015 9.19463C10.6243 9.7182 11.2632 9.98466 12 9.98466Z" fill="white"/>
+        </svg>    
+        <span class="profile-button__text">Account</span>
+    </a>
+
+    <a class="button notification notified" href="/account/notifications.html">
+        <svg class="notify-icon" width="22" height="29" viewBox="0 0 22 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4231 12.6479V20.2493L21.4711 22.2973C22.1126 22.9388 21.6641 24.0345 20.7491 24.0345H1.23585C0.340645 24.0345 -0.116428 22.9424 0.52861 22.2973L2.57658 20.2493V12.6479C2.57658 8.24715 4.89105 4.68421 8.88496 3.73791L9.24396 3.65286V2.27641C9.24396 1.30432 10.0278 0.520508 10.9999 0.520508C11.9719 0.520508 12.7558 1.30432 12.7558 2.27641V3.65256L13.1144 3.73783C17.0941 4.68406 19.4231 8.26238 19.4231 12.6479ZM4.60674 22.0043H17.393V12.6479C17.393 10.7191 16.8058 8.94014 15.703 7.63512C14.5938 6.32258 12.9817 5.51395 10.9999 5.51395C9.01801 5.51395 7.40596 6.32258 6.29674 7.63512C5.19389 8.94014 4.60674 10.7191 4.60674 12.6479V22.0043Z" fill="white"/>
+            <path d="M9.23441 27.7481C8.87769 27.3914 8.64006 26.9378 8.54711 26.4492H13.4525C13.2321 27.6008 12.2127 28.4794 10.9999 28.4794C10.3377 28.4794 9.70264 28.2163 9.23441 27.7481Z" fill="white"/>
+        </svg>
+    </a>
+
+    <input type="checkbox" id="side-checkbox" />
+    <div class="side-panel">
+
+        <label class="side-button-2" for="side-checkbox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5667 12.0004L22.7778 2.78931C22.9598 2.57675 23.0549 2.30334 23.0441 2.0237C23.0333 1.74406 22.9174 1.47879 22.7195 1.28091C22.5217 1.08303 22.2564 0.9671 21.9767 0.956299C21.6971 0.945498 21.4237 1.04062 21.2111 1.22265L12 10.4338L2.78891 1.21153C2.57969 1.00231 2.29592 0.884766 2.00002 0.884766C1.70413 0.884766 1.42036 1.00231 1.21114 1.21153C1.00191 1.42076 0.884367 1.70453 0.884367 2.00042C0.884367 2.29631 1.00191 2.58009 1.21114 2.78931L10.4334 12.0004L1.21114 21.2115C1.09482 21.3111 1.00036 21.4337 0.933663 21.5716C0.86697 21.7094 0.829492 21.8596 0.823582 22.0126C0.817671 22.1656 0.843455 22.3182 0.899316 22.4608C0.955176 22.6034 1.03991 22.7329 1.14819 22.8411C1.25647 22.9494 1.38597 23.0342 1.52855 23.09C1.67114 23.1459 1.82373 23.1717 1.97675 23.1658C2.12977 23.1598 2.27992 23.1224 2.41777 23.0557C2.55562 22.989 2.67819 22.8945 2.7778 22.7782L12 13.5671L21.2111 22.7782C21.4237 22.9602 21.6971 23.0553 21.9767 23.0445C22.2564 23.0337 22.5217 22.9178 22.7195 22.7199C22.9174 22.5221 23.0333 22.2568 23.0441 21.9771C23.0549 21.6975 22.9598 21.4241 22.7778 21.2115L13.5667 12.0004Z" fill="#343947"/>
+            </svg>                    
+        </label>
+
+        <input class="search--mobile" type="search" name="header-search" id="header-search" placeholder="Search">
+
+        <a class="button button--colored profile-button--mobile" href="/account/profile.html">
+            <svg class="profile-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0728 18.1165V21.0734H2.92719V18.1165C2.92719 17.5112 3.08228 16.9594 3.39264 16.4542C3.70363 15.9475 4.11338 15.5648 4.62517 15.2996C5.81834 14.7032 7.02876 14.2566 8.25668 13.9588C9.48525 13.6617 10.7328 13.5131 12 13.5131C13.2671 13.5131 14.5147 13.6617 15.7433 13.9588C16.9712 14.2566 18.1817 14.7032 19.3748 15.2996C19.8866 15.5648 20.2964 15.9476 20.6074 16.4543C20.9178 16.9595 21.0728 17.5112 21.0728 18.1165ZM4.60665 18.1165V19.3939H19.3933V18.1165C19.3933 17.842 19.3235 17.584 19.1826 17.3526C19.0449 17.1282 18.8608 16.9494 18.6324 16.8224L18.6193 16.8159C17.5399 16.2762 16.4479 15.87 15.3439 15.5986C14.2398 15.328 13.125 15.1926 12 15.1926C10.875 15.1926 9.75991 15.3281 8.65586 15.5987C7.55192 15.87 6.45999 16.2759 5.38055 16.8156L5.36776 16.8227C5.13939 16.9496 4.95537 17.1282 4.81843 17.3528C4.67648 17.5844 4.60665 17.8417 4.60665 18.1165ZM12 11.6641C10.7962 11.6641 9.77398 11.2394 8.91525 10.3807C8.05651 9.52194 7.6318 8.49976 7.6318 7.29593C7.6318 6.09209 8.05651 5.06991 8.91525 4.21118C9.77398 3.35245 10.7962 2.92773 12 2.92773C13.2038 2.92773 14.226 3.35245 15.0847 4.21118C15.9435 5.06991 16.3682 6.09209 16.3682 7.29593C16.3682 8.49976 15.9435 9.52194 15.0847 10.3807C14.226 11.2394 13.2038 11.6641 12 11.6641ZM12 9.98466C12.7369 9.98466 13.3762 9.71812 13.8998 9.19454C14.4227 8.67163 14.6887 8.03266 14.6887 7.29593C14.6887 6.55919 14.4227 5.92023 13.8998 5.39731C13.3762 4.87373 12.7369 4.6072 12 4.6072C11.2632 4.6072 10.6243 4.87364 10.1015 5.39722C9.57778 5.92007 9.31126 6.55906 9.31126 7.29593C9.31126 8.03279 9.57778 8.67178 10.1015 9.19463C10.6243 9.7182 11.2632 9.98466 12 9.98466Z" fill="white"/>
+            </svg>    
+        Account</a>
+
+        <nav class="header-navigation--mobile">
+            <ul class="menu menu--mobile">
+                <li class="menu--mobile__item"><a href="/our-services.html" title="Our services">Our services</a></li>
+                <li class="menu--mobile__item"><a href="/aditional-services.html" title="Additional services">Additional services</a></li>
+                <li class="menu--mobile__item"><a href="/loyalty-system.html" title="Loyalty system">Loyalty system</a></li>
+                <li class="menu--mobile__item"><a href="/FAQ.html" title="FAQ">FAQ</a></li>
+                <li class="menu--mobile__item"><a href="/contacts.html" title="Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+    </div>
+        
+    <label class="row side-button burger-wrapper" for="side-checkbox">
+        <svg class="burger-icon" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25 21H28.75M1.25 1H28.75H1.25ZM1.25 11H28.75H1.25Z" stroke="#343947" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>                
+    </label>
+    
+
+</header>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

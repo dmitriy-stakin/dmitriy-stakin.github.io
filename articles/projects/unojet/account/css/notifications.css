@@ -1,0 +1,135 @@
+.notifications-page__content .container {
+    max-width: 890px;
+    padding-top: 56px;
+    padding-bottom: 131px;
+} 
+
+.notifications__heading {
+    margin-bottom: 24px;
+    color: var(--dark-color);
+    font-size: 2.5em;
+}
+
+
+
+
+.notification-item {
+    margin-bottom: 24px;
+    padding: 24px 32px 32px;
+    border: 2px solid var(--dark-color);
+    border-radius: 12px;
+}
+
+.notification-item-header {
+    justify-content: space-between;
+}
+
+.notification-item__heading {
+    width: 100%;
+    max-width: 555px;
+    margin-bottom: 16px;
+
+    color: var(--dark-color);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.notification-item__time {
+    width: 100%;
+    max-width: 165px;
+
+    color: var(--grey-hover);
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: end;
+}
+
+.notification-item__content {
+    color: var(--grey-hover);
+    font-size: 1.125em;
+    font-weight: 450;
+}
+
+.button--notification {
+    margin-top: 25px;
+    padding: 9px 49px;
+}
+
+.notification-item--active {
+    background-color: var(--dark-color);
+}
+
+.notification-item--active .notification-item__heading {
+    color: var(--light-text);
+}
+
+
+
+
+.notification-popup__heading {
+    margin-bottom: 16px;
+    color: var(--dark-color);
+    font-size: 2.5em;
+}
+
+.notification-popup__text {
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    font-weight: 450px;
+}
+
+.notification-popup-content__image-wrapper {
+    margin-bottom: 32px;
+    min-height: 260px;
+    background-color: var(--grey-hover);
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .notifications-page__content .container {
+        max-width: 1084px;
+    } 
+}
+
+@media (max-width: 1024px) {
+    .notifications-page__content .container {
+        max-width: 869px;
+    } 
+
+    .notification-item__time {
+        max-width: 130px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .notifications-page__content .container {
+        max-width: 100%;
+    } 
+    
+    .notification-item-header {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .notification-item__time {
+        margin-bottom: 8px;
+    }
+
+    .notification-item__heading, .notification-item__time {
+        max-width: 100%;
+        text-align: start;
+    }
+
+    .popup  {
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .notification-item__content {
+        font-size: 1em;
+    }
+}

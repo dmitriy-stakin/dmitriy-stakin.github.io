@@ -1,0 +1,134 @@
+.tech-header {
+    position: relative;
+    padding: 32px 0;
+    justify-content: center;
+}
+
+.tech-site-logo {
+    width: 187px;
+}
+
+
+
+
+.tech-page__content .container {
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+
+.tech__heading {
+    font-size: 4em;
+    color: var(--accent-color);
+}
+
+
+
+
+.contacts-section {
+    padding: 48px 0 120px;
+}
+
+.contacts-section .phone {
+    margin-right: 105px;
+}
+
+.contacts-section .phone, .contacts-section .mail {
+    color: var(--dark-color);
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 56px;
+}
+
+.contact-heading {
+    margin-bottom: 4px;
+}
+
+.contact-text {
+    margin-bottom: 32px;
+    color: var(--grey-hover);
+}
+
+
+
+
+.contact-item__socials {
+    align-items: center;
+}
+
+.socials-icon:not(:last-child) {
+    margin-right: 45px;
+}
+
+.social-icon {
+    display: block;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .tech-page__content .container {
+        max-width: 964px;
+    }
+
+    .contact-item__contacts {
+        flex-wrap: wrap;
+    }
+
+    .contacts-section .phone {
+        margin-bottom: 8px;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .tech-page__content .container {
+        padding: 0 137px;
+    }
+
+    .tech__heading {
+        font-size: 2.5em;
+    }
+
+    .contact-item__contacts .phone {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-page__content .container {
+        padding: 0 116px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .tech-page__content .container {
+        padding: 0 40px;
+    }
+
+    .contact-heading {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 376px) {
+    .tech-page__content .container {
+        padding: 0 20px;
+    }
+
+    .tech__heading {
+        font-size: 2em;
+    }
+
+    .contacts-section .phone, .contacts-section .mail {
+        font-size: 1.25em;
+    }
+}

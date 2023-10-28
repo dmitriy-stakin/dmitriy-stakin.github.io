@@ -1,0 +1,14 @@
+.hero-search {
+    background-image: url('/assets/img/page--search/search-image.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.page-title {
+    color: var(--accent-color);
+}
+
+.hero-search-text {
+    max-width: 70%;
+    color: var(--light-text);
+}

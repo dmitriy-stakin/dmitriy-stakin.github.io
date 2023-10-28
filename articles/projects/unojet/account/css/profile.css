@@ -1,0 +1,697 @@
+.profile-page__content {
+ margin: 32px 0 120px;
+}
+
+.profile-content__header {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+
+
+
+.profile-heading {
+    color: var(--dark-color);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.profile-menu {
+    margin-bottom: 64px;
+}
+
+.profile-menu__header {
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.profile-menu__heading {
+    font-size: 1.25em;
+}
+
+.profile-name {
+    margin-right: 180px;
+}
+
+.profile-nav {
+    justify-content: space-between;
+}
+
+.profile-nav__item {
+    width: 100%;
+}
+
+.profile-nav__item:not(:last-child) {
+    margin-right: 27px;
+}
+
+.button--profile-nav {
+    justify-content: flex-start;
+
+    width: 100%;
+    padding: 25px 35px;
+
+    border: 2px solid var(--grey-hover);
+    border-radius: 12px;
+
+    color: var(--dark-color);
+    background-color: transparent;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.button--profile-nav:hover {
+    color: var(--light-text);
+}
+
+.button--profile-nav:hover .button--profile-nav__icon {
+    fill: var(--light-text);
+}
+
+.button--profile-nav.active {
+    color: var(--light-text);
+    background-color: var(--dark-color);
+}
+
+.button--profile-nav.active .button--profile-nav__icon {
+    fill: var(--light-text);
+}
+
+.button--profile-nav__icon {
+    margin-right: 25px;
+    fill: var(--dark-color);
+    pointer-events: none;
+}
+
+.profile-section {
+    display: none;
+}
+
+.profile-section.active {
+    display: block;
+}
+
+
+
+
+.applications-empty-text {
+    margin-bottom: 40px;
+    color: var(--grey-hover);
+    font-size: 1.125em;
+    font-weight: 450;
+}
+
+.applications-empty__header {
+    margin-bottom: 16px;
+    color: var(--dark-color);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.applications-empty__empty-legs {
+    margin-bottom: 48px;
+}
+
+.empty-legs-card {
+    margin-bottom: 24px;
+}
+
+.empty-legs-card {
+    border: 2px solid var(--grey-hover);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.empty-legs-card__image-wrapper {
+    width: 100%;
+    max-width: 268px;
+}
+
+.empty-legs-card__image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.empty-legs-card__content .row {
+    justify-content: space-between;
+}
+
+.empty-legs-card__content {
+    width: 100%;
+    padding: 32px;
+}
+
+.empty-legs-card__meta {
+    margin-bottom: 12px;
+}
+
+.empty-legs-card__meta--days {
+    flex-wrap: wrap;
+}
+
+.empty-legs-card__meta--days-mobile {
+    display: none;
+}
+
+.empty-legs-card__meta--days-mobile .empty-legs__meta-item {
+    margin-bottom: 4px;
+}
+
+.empty-legs__meta-item {
+    border-radius: 64px;
+}
+
+.empty-legs__params-item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.empty-legs__params-item {
+    margin-bottom: 4px;
+    padding: 4px 24px;
+    background-color: var(--dark-color);
+    color: var(--light-text);
+}
+
+.empty-legs__days-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.empty-legs__days-item {
+    padding: 2px 12px;
+    border: 1px solid var(--dark-color);
+}
+/*kgjerlkjerlkgmj*/
+.empty-legs-divider {
+    margin: 0 24px;
+}
+
+.applications .flight-card__flight-time, .applications .flight-card__flight-price {
+    width: 100%;
+}
+
+.empty-legs_flight-time {
+    color: var(--grey-hover);
+    font-weight: 600;
+}
+
+.empty-legs_flight-price {
+    margin-top: 4px;
+    color: var(--dark-color);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.empty-legs-card__service:not(:last-child) {
+    margin-right: 24px;
+}
+
+.empty-legs-card__service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    max-width: 60px;
+}
+
+.empty-legs-card__service-text {
+    font-weight: 600;
+}
+
+.empty-legs__card-button {
+    width: 100%;
+    padding: 11px;
+}
+
+
+
+
+.special-offers__heading {
+    margin-bottom: 16px;
+}
+
+.special-offers__city {
+    margin-bottom: 8px;
+    color: var(--grey-hover);
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.special-offers__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 19px;
+}
+
+.special-offers__list-item {
+    position: relative;
+    border: 2px solid var(--grey-hover);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.special-offers__list-image-wrapper {
+    height: 100%;
+    max-height: 130px;
+}
+
+.special-offers__list-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.special-offers__list-content-wrapper {
+    padding: 12px 24px 24px;
+}
+
+.special-offers__list-name, .special-offers__price {
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.special-offers__list-price {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.special-offers__price-old {
+    color: var(--grey-hover);
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.offer-price-wrapper {
+    width: 100%;
+}
+
+.special-offers__price {
+    font-weight: 700;
+}
+
+.button--special-offers {
+    width: 100%;
+}
+
+.button--special-offers:first-child {
+    margin-bottom: 8px;
+}
+
+.special-offer__order, .special-offers__active {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 2;
+
+    background-color: #ffffff;
+}
+
+.special-offer__order .special-offers__list-content-wrapper {
+    padding: 24px;
+}
+
+.special-offer__order .special-offers__list-price {
+    margin-bottom: 24px;
+}
+
+.special-offer__input {
+    margin-bottom: 16px;
+    padding: 10px 24px;
+}
+
+.special-offer__form .input-transform::before {
+    top: 9px;
+}
+
+.special-offer__form .input-transform.transformed::before {
+    top: -11px;
+}
+
+.input-start-wrapper::before {
+    content: "Start date";
+}
+
+.input-end-wrapper::before {
+    content: "End date";
+}
+
+.input-address-wrapper::before {
+    content: "Reporting address";
+}
+
+.special-offers__active {
+    flex-direction: column;
+}
+
+.special-offers__active .special-offers__list-price {
+    flex-wrap: wrap;
+}
+
+.special-offers__active .special-offers__list-content-wrapper {
+    padding-bottom: 16px;
+}
+
+.completed-notification {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    color: var(--light-text);
+    background-color: var(--accent-color);
+}
+
+
+
+
+
+.previous-flight-card__directions {
+    margin-bottom: 27px;
+    flex-wrap: wrap;
+}
+
+.row.previous-flight__meta {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.previous-flight__meta div:first-child {
+    margin-right: 120px;
+}
+
+.previous-flight__meta div .pf-meta__item:first-child {
+    margin-bottom: 8px;
+}
+
+.pf-meta__item {
+    color: var(--grey-hover);
+    font-size: 1.25em;
+}
+
+
+
+
+.account-setup__header {
+    margin-bottom: 16px;
+}
+
+.account-setup__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 32px;
+    margin-bottom: 32px;
+}
+
+.acount-setup__label, .ac__checkbox-label, .other-contacts__heading {
+    color: var(--dark-color);
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.account-setup__input {
+    margin-top: 8px;
+}
+
+.label-birth__explanation {
+    position: relative;
+}
+
+.label-birth__explanation::after {
+    content: "Linked social networks";
+    position: absolute;
+    top: -10px;
+    left: 40px;
+
+    min-width: 200px;
+    padding: 8px 24px;
+    color: var(--light-text);
+    background-color: var(--grey-hover);
+    border-radius: 41px;
+
+    opacity: 0;
+    font-size: .9em;
+    transition: opacity .2s;
+}
+
+.label-birth__explanation:hover::after {
+    opacity: .8;
+}
+
+.ac__checkbox-wrap, .ac__submit {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: start;
+}
+
+.ac__checkbox-label {
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.ac__checkbox-label:before {
+    content: "";
+
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+
+    border-radius: 10px;
+    border: 2px solid var(--dark-color);
+    background-color: transparent;
+}
+
+.ac__checkbox-label:after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    border-radius: 7px;
+    background-color: var(--dark-color);
+}
+
+#ac__acceptance:checked + .ac__checkbox-label:after {
+    display: inline-block;
+}
+
+.account-setup__form-pass-repeat {
+    align-self: flex-end;
+    height: 60px;
+    font-size: 1em;
+}
+
+
+
+
+.other-contacts__list {
+    align-items: center;
+    margin: 20px 0 45px;
+}
+
+.other-contacts__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.button--sign-out {
+    width: 100%;
+    padding: 15px;
+}
+
+.button--sign-out:hover {
+    background-color: var(--accent-red);
+}
+
+
+
+
+.popup--special-offers .popup__content {
+    padding: 32px 60px 48px;
+}
+
+.popup__main-info {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.popup__heading {
+    margin-bottom: 8px;
+}
+
+.popup__characteristics {
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.popup__characteristic {
+    color: var(--grey-hover);
+}
+
+.popup__characteristic:not(:last-child) {
+    margin-right: 24px;
+}
+
+.popup__footer-item, .popup__characteristic, .popup__main-info {
+    font-size: 1.125em;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .special-offers__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 990px) {
+    .profile-menu__header, .profile-menu {
+        margin-bottom: 34px;
+    }
+
+    .button--profile-nav {
+        flex-direction: column;
+
+        padding: 0;
+        border: 0;
+
+        color: var(--grey-hover);
+    }
+
+    .button--profile-nav.active {
+        background-color: transparent;
+        color: var(--dark-color);
+    }
+
+    .button--profile-nav__icon {
+        margin-right: 0;
+        fill: var(--grey-hover);
+    }
+
+    .button--profile-nav.active .button--profile-nav__icon {
+        fill: var(--dark-color);
+    }
+}
+
+@media (max-width: 945px) {
+    .special-offers__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-name {
+        margin-right: 72px;
+    }
+
+    .profile-menu__heading {
+        font-size: 0.875em;
+    }
+    
+    .profile-menu__value {
+        font-size: 1.5em;
+    }
+
+    .button--profile-nav {
+        font-size: 0.75em;
+    }
+
+
+
+    .previous-flights__header, .account-setup__header {
+        font-size: 1.5em;
+    }
+
+    .acount-setup__label, .ac__checkbox-label, .other-contacts__heading {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 680px) {
+    .flight-card__content .flight-card__meta {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .days-item {
+        margin-bottom: 8px;
+    }
+
+    .flight-card__meta div:first-child {
+        margin-right: 80px;
+    }
+
+    .previous-flights .flight-card__meta div:first-child {
+        margin-right: 0;
+    }
+
+
+
+
+    .account-setup__form {
+        grid-template-columns: 1fr;
+    }
+
+    .ac__checkbox-wrap, .ac__submit {
+        grid-column-end: unset;
+    }
+}
+
+@media (max-width: 633px) {
+    .previous-flight__meta div:first-child {
+        margin-bottom: 8px;
+    }
+
+    .special-offers__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .flight-card__content {
+        padding: 16px;
+    }
+
+    .previous-flight-card__directions {
+        margin-bottom: 16px;
+    }
+
+    .previous-flight-card__directions .flight-card__directions {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 536px) {
+    .profile-name {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup--special-offers .popup__content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .flight__params-item:last-child {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 365px) {
+    .pf__button-wrapper {
+        flex-wrap: wrap;
+    }
+}

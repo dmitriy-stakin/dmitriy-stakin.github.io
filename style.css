@@ -1,3 +1,43 @@
 html {
     background: gray;
 }
+
+.flex {
+    display: flex;
+}
+
+.popup__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.popup__background.popup-active {
+    visibility: visible;
+}
+
+.popup__wrapper {
+    position: relative;
+    max-width: 450px;
+    background-color: #f5f5f5;
+}
+
+.popup__close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+
+    padding: 10px;
+
+    border-radius: 25px;
+    color: #f5f5f5;
+    background-color: #121212;
+}

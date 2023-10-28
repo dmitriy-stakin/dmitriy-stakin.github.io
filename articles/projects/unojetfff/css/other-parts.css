@@ -1,0 +1,44 @@
+.feedback__empty-legs {
+    position: relative;
+    max-width: 600px;
+    padding: 32px 60px 40px;
+}
+
+.feedback__empty-legs-directions {
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.flight-heading {
+    font-weight: 600;
+}
+
+.flight-divider {
+    margin: 0 24px;
+}
+
+.feedback__empty-legs-header {
+    margin-bottom: 24px;
+}
+
+.feedback__empty-legs-form {
+    margin-bottom: 8px;
+}
+
+.feedback__empty-input {
+    margin-bottom: 16px;
+}
+
+.feedback__empty-input:last-child {
+    margin-bottom: 24px;
+}
+
+.sign-up-acceptance {
+    color: var(--grey-hover);
+}
+
+.sign-up-acceptance a {
+    color: var(--grey-hover);
+    text-decoration: underline;
+}
+

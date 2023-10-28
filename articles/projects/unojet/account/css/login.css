@@ -1,0 +1,127 @@
+.login {
+    align-items: center;
+    padding: 81px 0 120px;
+}
+
+.login-heading {
+    margin-bottom: 24px;
+    color: var(--dark-color);
+    font-size: 4em;
+}
+
+
+
+
+.login__form-wrapper {
+    width: 46%;
+    padding-right: 86px;
+}
+
+.input-login-wrapper::before {
+    content: 'Email or Phone';
+}
+
+.input-password-wrapper::before {
+    content: 'Password';
+}
+
+.login-form__login {
+    margin-bottom: 24px;
+}
+
+.login-form__password {
+    margin-bottom: 32px;
+}
+
+.login-form__footer {
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.login-form__footer-link {
+    color: var(--grey-hover);
+    font-size: 1.125em;
+    text-decoration: underline;
+}
+
+
+
+
+.login__extra {
+    width: 54%;
+    padding-left: 86px;
+}
+
+.extra-heading {
+    margin-bottom: 16px;
+}
+
+.extra-text {
+    margin-bottom: 24px;
+    color: var(--grey-hover);
+    font-size: 1.125em;
+}
+
+.button--login-loyalty {
+    width: fit-content;
+    padding: 10px 45px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .login__form-wrapper {
+        padding-right: 59px;
+    }
+
+    .login__extra {
+        padding-left: 59px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .login__form-wrapper {
+        padding-right: 48px;
+    }
+
+    .login__extra {
+        padding-left: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-page__content .container {
+        max-width: 586px;
+    }
+
+    .login {
+        flex-wrap: wrap;
+    }
+
+    .login__form-wrapper {
+        margin-bottom: 60px;
+    }
+
+    .login__form-wrapper, .login__extra {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .login-form__footer-link {
+        font-size: 0.875em;
+    }
+}
+
+@media (max-width: 480px) {
+    @media (max-width: 480px) {
+        .login {
+            padding-top: 32px;
+        }
+
+        .login-heading {
+            font-size: 1.5em;
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.aditional-services-page .container {
+    max-width: 1200px;
+    padding: 0;
+}
+
+
+
+
+.aditional-services-section {
+    padding: 56px 0;
+}
+
+.aditional-services-card:not(:last-child) {
+    margin-bottom: 56px;
+}
+
+.aditional-services-card__heading {
+    margin-bottom: 12px;
+    color: var(--dark-color);
+}
+
+.aditional-services-card_image-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.aditional-services-card__image {
+    width: 435px;
+}
+
+.aditional-services-card__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 69%;
+    padding: 5px 0 5px 35px;
+}
+
+.aditional-services-card__description {
+    margin-bottom: 24px;
+    color: var(--grey-hover);
+    font-size: 1.12em;
+    font-weight: 450;
+}
+
+
+
+
+.aditional-services__form-section .container {
+    max-width: 890px;
+    padding-bottom: 120px;
+}
+
+.aditional-services__form-heading {
+    color: var(--dark-color);
+    font-size: 2em;
+}
+
+.aditional-services__form-input {
+    padding: 17px 24px;
+}
+
+.input-request-wrapper::before {
+    content: 'Request';
+}
+
+.input-email-wrapper::before {
+    content: 'Email'
+}
+
+.aditional-services__form > div {
+    margin-bottom: 16px;
+}
+
+.aditional-services__form-input--submit {
+    margin-top: 8px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .aditional-services-page .container {
+        max-width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .aditional-services__form-section .container {
+        max-width: 964px;
+    }
+}
+
+@media (max-width: 1034px) {
+    .hero-heading {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .aditional-services-card__image {
+        width: 334px;
+    }
+
+    .aditional-services-card__description-wrapper {
+        width: 63%;
+    }
+}
+
+@media (max-width: 860px) {
+    .aditional-services-card {
+        flex-wrap: wrap;
+    }
+
+    .aditional-services-card_image-wrapper {
+        margin-bottom: 12px;
+    }
+
+    .aditional-services-card__description-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .aditional-services-card__phone {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 729px) {
+    .hero-heading {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 501px) {
+    .hero-heading {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .aditional-services-page .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .aditional-services-card_image-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .aditional-services-card__description-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .aditional-services-card__description {
+        font-size: 1em;
+    }
+
+    .service-card__link {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 376px) {
+    .aditional-services-page .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-heading {
+        font-size: 2em;
+    }
+}

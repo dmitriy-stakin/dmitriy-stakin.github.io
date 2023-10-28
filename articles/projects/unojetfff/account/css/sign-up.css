@@ -1,0 +1,132 @@
+.sign-up {
+    align-items: center;
+    padding: 80px 0 120px;
+}
+
+.sign-up-heading {
+    margin-bottom: 24px;
+    color: var(--dark-color);
+    font-size: 4em;
+}
+
+
+
+
+.sign-up__form-wrapper {
+    width: 46%;
+    padding-right: 86px;
+}
+
+.sing-up__emal-wrapper::before {
+    content: 'Email';
+}
+
+.sing-up__tel-wrapper::before {
+    content: 'Phone number';
+}
+
+.sing-up__password-wrapper::before {
+    content: 'Password';
+}
+
+.sing-up__re-password-wrapper::before {
+    content: 'Retype password';
+}
+
+.sign-up-form__input {
+    margin-bottom: 32px;
+}
+
+.sign-up-form__footer {
+    margin-top: 8px;
+}
+
+.sign-up-acceptance, .sign-up-form__footer a {
+    color: var(--grey-hover);
+}
+
+.sign-up-form__footer a {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.sign-up__extra {
+    width: 54%;
+    padding-left: 86px;
+}
+
+.extra-heading {
+    margin-bottom: 16px;
+}
+
+.extra-text {
+    margin-bottom: 24px;
+    color: var(--grey-hover);
+    font-size: 1.125em;
+}
+
+.button--sign-up-loyalty {
+    width: fit-content;
+    padding: 10px 45px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .sign-up__form-wrapper {
+        padding-right: 59px;
+    }
+
+    .sign-up__extra {
+        padding-left: 59px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sign-up__form-wrapper {
+        padding-right: 48px;
+    }
+
+    .sign-up__extra {
+        padding-left: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-up-page__content .container {
+        max-width: 586px;
+    }
+
+    .sign-up {
+        flex-wrap: wrap;
+    }
+
+    .sign-up__form-wrapper {
+        margin-bottom: 60px;
+    }
+
+    .sign-up__form-wrapper, .sign-up__extra {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .sign-up-form__footer-link {
+        font-size: 0.875em;
+    }
+}
+
+@media (max-width: 480px) {
+    .sign-up {
+        padding-top: 32px;
+    }
+
+    .sign-up-heading {
+        font-size: 1.5em;
+    }
+}

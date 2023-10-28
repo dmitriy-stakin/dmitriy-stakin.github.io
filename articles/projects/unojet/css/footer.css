@@ -1,0 +1,132 @@
+.footer {
+    padding: 40px;
+    background-color: var(--text-color);
+}
+
+.footer .container {
+    max-width: 1492px;
+    justify-content: space-between;
+}
+
+.footer__item {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts__item {
+    display: inline-block;
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.footer-menu {
+    columns: 2;
+    column-gap: 156px;
+}
+
+.contacts {
+    width: 33%;
+}
+
+.footer-menu__item {
+    white-space: nowrap;
+}
+
+.footer-menu__item a {
+    color: var(--grey-hover);
+    font-size: 1.25em;
+}
+
+.footer-menu__item:not(:nth-child(3n)) {
+    margin-bottom: 16px;
+}
+
+.footer-socials {
+    text-align: center;
+}
+
+.footer-socials__item {
+    display: block;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .contacts__item {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 868px) {
+    .footer {
+        padding:  40px 0;
+    }
+
+    .footer .row {
+        flex-wrap: wrap;
+    }
+
+    .contacts {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .contacts__item.phone-number {
+        margin-right: 24px;
+    }
+
+    .footer-socials {
+        align-content: end;
+        padding-right: 60px;
+    } 
+}
+
+@media (max-width: 636px) {
+    .footer-menu {
+        column-gap: 80px;
+    }
+
+    .footer-menu__item a {
+        font-size: 1em;
+    }
+
+    .footer-socials {
+        width: 19%;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 504px) {
+    .footer-socials {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 36px;
+    }
+
+    .footer-socials__item:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contacts__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .phone-number {
+        width: 100%;
+    }
+
+    .mail {
+        width: 100%;
+    }
+}
