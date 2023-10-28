@@ -3,7 +3,7 @@
 - Дизайн в Figma:
 
 - Рабочие сайты:
-  1. //opletki.ru
+  1. https://opletki.ru
   - сайты, созданные в сотрудничестве с //dmagroup.ru:
   1. //dkdent-learn.ru
   2. //centr-metalla.ru
