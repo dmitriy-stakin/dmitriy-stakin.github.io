@@ -10,7 +10,7 @@
     - [LinkedIn redesign](https://www.figma.com/file/cus9rH5papV33EAWaQiFv7/RedesignLinkedlin-(Copy)?type=design&node-id=0-1&mode=design&t=xQdf0zMB4wOWrhM0-0)
 
 - Рабочие сайты:
-  -[Интернет-магазин по оптовой продаже оплёток для руля](https://opletki.ru)
+    - [Интернет-магазин по оптовой продаже оплёток для руля](https://opletki.ru)
   
   - сайты, созданные в сотрудничестве с https://dmagroup.ru:
     - [Геокуполы для туризма (совместно с дизайнером)](https://sphera-organica.ru/)
