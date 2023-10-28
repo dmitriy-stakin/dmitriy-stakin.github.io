@@ -3,8 +3,9 @@
 - Дизайн в Figma:
 
 - Рабочие сайты:
-  1. https://opletki.ru
-  - сайты, созданные в сотрудничестве с //dmagroup.ru:
-  1. //dkdent-learn.ru
-  2. //centr-metalla.ru
-  3. //психотерапевт-нск.рф
+  • https://opletki.ru
+  - сайты, созданные в сотрудничестве с https://dmagroup.ru:
+  • https://sphera-organica.ru/ (совместно с дизайнером)
+  • https://dkdent-learn.ru
+  • https://centr-metalla.ru
+  • https://психотерапевт-нск.рф
