@@ -1,0 +1,24 @@
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color: #f5f5f5;
+}
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+.flex {display: flex}
+.align-center{align-items: center}
+.justify-sb{justify-content: space-between}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.br-20 {border-radius: 20px}
