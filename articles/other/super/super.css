@@ -12,6 +12,10 @@ body, ul, li {
 li {
     list-style: none;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .flex {display: flex}
 .align-center{align-items: center}
@@ -22,3 +26,9 @@ li {
     padding: 0 40px;
 }
 .br-20 {border-radius: 20px}
+
+@media (min-width: 1024px) {
+    a:hover {
+        text-decoration: underline;
+    }
+}
