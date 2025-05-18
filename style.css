@@ -1,9 +1,13 @@
 html {
-    background: gray;
+    background-color: #2a2a2a;
 }
 
 .flex {
     display: flex;
+}
+
+.page-section {
+    background-color: #333333;
 }
 
 .popup__background {
